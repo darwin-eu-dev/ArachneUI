@@ -175,8 +175,9 @@ class Api {
         }
         return res.body;
       });*/
-
-    const fullpath = this.apiHost + path;
+    // If environment variables have been injected into docker container use those, else default behaviour
+    const base = window._env_ ? window._env_.API_HOST : this.apiHost;
+    const fullpath =  base + path;
     return fetch(fullpath, params)
       .then(res => {
         return res.text()
