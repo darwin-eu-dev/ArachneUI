@@ -172,9 +172,11 @@ class FormLogin extends React.Component {
           <LoadingPanel active={isLoading}/>
       </div>;
 
+    // If we are running back-end elsewhere, we need to link properly
+    const base = window._env_ ? window._env_.API_HOST : "";
     const externalMethod = (name, url, classes, text, image) =>
       <div {...formClasses('actions')} key={name}>
-        <a href={url} className="ac-link">
+        <a href={base + url} className="ac-link">
           <span {...classes('login-method-text')}>{text}</span>
           <img {...classes('login-method-image')} src={image} alt={'logo of ' + text}/>
         </a>

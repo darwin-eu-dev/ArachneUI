@@ -29,10 +29,6 @@ variables:
     value: '$(Build.SourcesDirectory)/Dockerfile'
   - name: tag
     value: '$(Build.BuildId)'
-  
-  # Container registry service connection established during pipeline creation
-  - name: dockerRegistryServiceConnection
-    value: 'c5e89591-b8d0-46f5-babb-b26ac9703cd4'
 
 stages:
   - stage: Build
