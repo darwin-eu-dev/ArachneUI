@@ -46,13 +46,13 @@ if (__APP_TYPE_CENTRAL__) {
 
   const Workspace = require('./Workspace/index').default;
 
-  modules.push({
-    ...Workspace,
-    path: modulePaths.workspace,
-    namespace: 'workspace',
-    isRoot: true,
-    isAdminOnly: false,
-  });
+  // modules.push({
+  //   ...Workspace,
+  //   path: modulePaths.workspace,
+  //   namespace: 'workspace',
+  //   isRoot: true,
+  //   isAdminOnly: false,
+  // });
 
   modules.push({
     ...StudyManager,
@@ -71,12 +71,12 @@ if (__APP_TYPE_CENTRAL__) {
     isAdminOnly: false,
   });
 
-  modules.push({
-    ...ExpertFinder,
-    path: modulePaths.expertFinder,
-    namespace: 'expertFinder',
-    isAdminOnly: false,
-  });
+  // modules.push({
+  //   ...ExpertFinder,
+  //   path: modulePaths.expertFinder,
+  //   namespace: 'expertFinder',
+  //   isAdminOnly: false,
+  // });
 
   modules.push({
     ...DataCatalog,
@@ -85,12 +85,12 @@ if (__APP_TYPE_CENTRAL__) {
     isAdminOnly: false,
   });
 
-  modules.push({
-    ...InsightsLibrary,
-    path: modulePaths.insightsLibrary,
-    namespace: 'insightsLibrary',
-    isAdminOnly: false,
-  });
+  // modules.push({
+  //   ...InsightsLibrary,
+  //   path: modulePaths.insightsLibrary,
+  //   namespace: 'insightsLibrary',
+  //   isAdminOnly: false,
+  // });
 
   modules.push({
     ...Admin,

@@ -129,13 +129,13 @@ function MenuDropdown(props) {
       },
       innerMenuItems: tenantMenuItems,
     },
-    {
-      link: {
-        sectionIco: 'portrait',
-        text: 'User Profile',
-        url: paths.profile(props.id),
-      },
-    },
+    // {
+    //   link: {
+    //     sectionIco: 'portrait',
+    //     text: 'User Profile',
+    //     url: paths.profile(props.id),
+    //   },
+    // },
     {
       link: {
         sectionIco: 'storage',

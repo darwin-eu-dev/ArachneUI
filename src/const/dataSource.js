@@ -61,9 +61,9 @@ const attributeNames = keyMirror({
 
 const modelTypesValues = keyMirror({
   CDM: null,
-  I2B2: null,
-  CDISK: null,
-  OTHER: null,
+  // I2B2: null,
+  // CDISK: null,
+  // OTHER: null,
 });
 
 const executionPolicy = keyMirror({
@@ -103,18 +103,18 @@ const modelTypes = [
   {
     value: 'CDM',
     label: modelTypesValues.CDM,
-  },
-  {
-    label: 'I2B2',
-    value: modelTypesValues.I2B2,
-  },
-  {
-    label: 'CDISK',
-    value: modelTypesValues.CDISK,
-  },
-  {
-    label: 'Other',
-    value: modelTypesValues.OTHER,
+  // },
+  // {
+  //   label: 'I2B2',
+  //   value: modelTypesValues.I2B2,
+  // },
+  // {
+  //   label: 'CDISK',
+  //   value: modelTypesValues.CDISK,
+  // },
+  // {
+  //   label: 'Other',
+  //   value: modelTypesValues.OTHER,
   }];
 
 const cdmVersionList = [

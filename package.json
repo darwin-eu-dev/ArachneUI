@@ -16,7 +16,7 @@
   "description": "",
   "main": "app/app.js",
   "scripts": {
-    "portal": "webpack-dev-server --env.app central --env.mode development --config webpack/app.config.js",
+    "portal": "chmod +x ./env.sh && ./env.sh && mv env-config.js ./src/ && webpack-dev-server --env.app central --env.mode development --config webpack/app.config.js",
     "node": "webpack-dev-server --env.app node --env.mode development --config webpack/app.config.js",
     "build": "webpack --env.mode production --progress --config webpack/app.config.js",
     "build-node": "webpack --env.mode production --env.app node --progress --config webpack/app.config.js",

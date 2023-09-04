@@ -4,4 +4,5 @@
 node_modules/
 target
 public/*
-.DS_Store
+**/.DS_Store
+package-lock.json
