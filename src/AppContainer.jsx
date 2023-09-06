@@ -23,13 +23,14 @@
 import React, { Component, PropTypes } from 'react';
 
 import imgs from 'const/imgs';
-import { Header, Sidebar, ModalUtils } from 'arachne-ui-components';
+import { Header, ModalUtils } from 'arachne-ui-components';
 import BEMHelper from 'services/BemHelper';
 import { connect } from 'react-redux';
 import actions from 'actions';
 import { get } from 'services/Utils';
 
 import AboutInfo from 'modules/Portal/components/AboutInfo';
+import Sidebar from 'components/Sidebar';
 import { modal } from 'modules/Portal/const';
 import { asyncConnect } from 'redux-async-connect';
 import { nodeFunctionalModes } from 'modules/Auth/const';

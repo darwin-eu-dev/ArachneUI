@@ -23,7 +23,6 @@
 import React, { PropTypes, Component } from 'react';
 import BEMHelper from 'services/BemHelper';
 import {
-  Link,
   Table,
   TableCellText as Cell,
   TableCellStatus as CellStatus,
@@ -97,16 +96,16 @@ class TableStudies extends Component {
       <LeadList
         key="leadList"
         {...this.tableClasses('lead')}
-        header="Lead"
+        header="P.I."
         field="leadList"
         userLinkFormatter={this.props.userLinkFormatter}
       />,
-      <RoleCell
-        key="role"
-        {...this.tableClasses('role')}
-        header="My role"
-        field="role"
-      />,
+      // <RoleCell
+      //   key="role"
+      //   {...this.tableClasses('role')}
+      //   header="My role"
+      //   field="role"
+      // />,
       <Cell
         key="created"
         {...this.tableClasses('created')}
@@ -121,17 +120,24 @@ class TableStudies extends Component {
         field="updated"
         format={this.props.timestampFormatter}
       />,
-      <Cell
-        key="type"
-        {...this.tableClasses('type')}
-        header="Type"
-        field="type"
-        format={this.props.typeFormatter}
-      />,
+        <Cell
+            key="actionRequired"
+            {...this.tableClasses('actionRequired')}
+            header="actionRequired"
+            field="actionRequired"
+            format={this.props.actionRequiredFormatter}
+        />,
+      // <Cell
+      //   key="type"
+      //   {...this.tableClasses('type')}
+      //   header="Type"
+      //   field="type"
+      //   format={this.props.typeFormatter}
+      // />,
       <CellStatus
         key="status"
         {...this.tableClasses('status')}
-        header="Status"
+        header="Study status"
         field="status"
         format={this.props.statusFormatter}
       />
@@ -170,6 +176,7 @@ TableStudies.propTypes = {
   userLinkFormatter: PropTypes.func.isRequired,
   setSorting: PropTypes.func.isRequired,
   sorting: PropTypes.object.isRequired,
+  actionRequiredFormatter: PropTypes.func.isRequired,
   statusFormatter: PropTypes.func.isRequired,
   typeFormatter: PropTypes.func.isRequired,
   pages: PropTypes.number,

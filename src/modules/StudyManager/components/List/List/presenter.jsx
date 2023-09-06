@@ -53,6 +53,7 @@ ListStudies.propTypes = {
   goToStudy: PropTypes.func.isRequired,
   userLinkFormatter: PropTypes.func.isRequired,
   sorting: PropTypes.object.isRequired,
+  actionRequiredFormatter: PropTypes.func.isRequired,
   statusFormatter: PropTypes.func.isRequired,
   typeFormatter: PropTypes.func.isRequired,
   pages: PropTypes.number,
