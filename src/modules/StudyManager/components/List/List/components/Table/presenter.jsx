@@ -96,7 +96,7 @@ class TableStudies extends Component {
       <LeadList
         key="leadList"
         {...this.tableClasses('lead')}
-        header="P.I."
+        header="Principal Investigator."
         field="leadList"
         userLinkFormatter={this.props.userLinkFormatter}
       />,
@@ -123,7 +123,7 @@ class TableStudies extends Component {
         <Cell
             key="actionRequired"
             {...this.tableClasses('actionRequired')}
-            header="actionRequired"
+            header="Action Required"
             field="actionRequired"
             format={this.props.actionRequiredFormatter}
         />,
