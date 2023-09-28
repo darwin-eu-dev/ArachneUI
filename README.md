@@ -1,67 +1,18 @@
-# Arachne
-Network infrastructure for collaborative studies across disparate data nodes and researches
+# ARACHNE UI / DARWIN EU FORK
 
-ArachneUI is the web application which can be assembled in the Arachne Central or Datanode mode.
+*This is the Arachne UI Fork of the Darwin EU CC, it contains modifications required for the DARWIN EU CC
+The original readme is available in this folder*
 
-# Build Web Applications
+## HOW TO RUN
 
-### Get sources
+Check the original readme, we are only using Arachne Portal (Central)
 
-Checkout [ArachneUI repository](https://github.com/OHDSI/ArachneUI.git): 
-```
-git clone https://github.com/OHDSI/ArachneUI.git 
-```
+## HOW TO DEPLOY
 
-### Install npm packages
+When committing changes to the master branch of the Arachne Central API a build and release is triggered in Azure DevOps to the dev environment.
+If you want to redeploy after making changes to the front-end you need to manually trigger one.
 
-After getting the sources please execute following commands: 
+## CONTACT
 
-```
-cd ArachneUI
-npm install
-```
-
-### Build
-
-In order to assemble Arachne Central web application please run:
-```
-npm run build
-```
-In order to assemble ArachneNode web application please run:
-```
-npm run build-node
-```
-
-# Development guide
-
-### Run in development mode
-
-In order to start portal web app please start [ArachneCentralAPI](https://github.com/OHDSI/ArachneCentralAPI) backend and execute following command:
-```
-npm run portal
-```
-Webpack dev server should start at [localhost:8010](http://localhost:8010)
-
-
-In order to start datanode web app please start [ArachneNodeAPI](https://github.com/OHDSI/ArachneNodeAPI) backend run following command:
-```
-npm run node
-```
-Webpack dev server should start at [localhost:8020](http://localhost:8020)
-
-
-### Module structure
-
-- /components
-  - /Dummy
-    - container.js(x)
-    - index.js
-    - presenter.jsx
-    - selectors.js
-    - style.scss
-- /converters
-- /ducks
-- const
-- index
-- routes
-
+There is at present no designated maintainer of this code.
+Get in touch with Sicco, Arie, Adam or Peter for questions

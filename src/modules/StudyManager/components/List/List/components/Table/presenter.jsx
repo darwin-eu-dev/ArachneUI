@@ -96,7 +96,7 @@ class TableStudies extends Component {
       <LeadList
         key="leadList"
         {...this.tableClasses('lead')}
-        header="Principal Investigator."
+        header="PI"
         field="leadList"
         userLinkFormatter={this.props.userLinkFormatter}
       />,
