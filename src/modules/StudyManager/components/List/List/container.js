@@ -65,7 +65,7 @@ export default class List extends ContainerBuilder {
         link: paths.user(data.id),
         label: `${data.firstname} ${data.lastname}`,
       }),
-      actionRequiredFormatter: actionRequired => actionRequired ? "Action required" : "All is good",
+      actionRequiredFormatter: actionRequired => actionRequired ? "YES" : "NO",
       timestampFormatter: timestamp => moment(timestamp).format(humanDate),
       typeFormatter: type => (type ? type.name : null),
       statusFormatter: (status) => {
