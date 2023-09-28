@@ -143,13 +143,13 @@ function MenuDropdown(props) {
         url: paths.datasources(),
       },
     },
-    {
-      link: {
-        sectionIco: 'settings',
-        text: 'Settings',
-        url: paths.settings(),
-      },
-    },
+    // {
+    //   link: {
+    //     sectionIco: 'settings',
+    //     text: 'Settings',
+    //     url: paths.settings(),
+    //   },
+    // },
   ];
 
   return (
